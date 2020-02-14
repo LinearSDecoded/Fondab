@@ -1,6 +1,6 @@
-.openSans {
+.container {
     font-family: 'Open Sans', sans-serif;
-    font-size: medium;
+    font-size: 12px;
 }
 
 .row{
@@ -18,6 +18,7 @@
 
 .container{
     padding-left: 50px !important;
+    padding-right: 50px !important;
 }
 
 .steps, .customer-type, .registration, .become-customer{
@@ -32,6 +33,9 @@
     margin-top: 20px;
 }
 
+.explanation{
+    padding-left: 30px;
+}
 
 .link{
     font-weight: 600;
@@ -85,7 +89,7 @@
 
 .checkmark:after {
     content: "";
-    position: absolute;
+    position: relative;
     display: none;
 }
 
@@ -120,6 +124,7 @@
 
 .country{
     margin-right: 15px !important;
+    width: 89% !important;
 }
 
 .lightgrey{
@@ -150,7 +155,9 @@
     position: absolute;
     margin-left: -63px !important;
     margin-right: 100px;
-    padding-left: 7px;
+    margin-top: 10px;
+    padding-left: 8px;
+    padding-top: 1px;
     background-color: white;
     color: #eee;
   }
@@ -166,6 +173,7 @@ div{
 
 .border{
     margin-top: 20px;
+    margin-bottom: 20px;
     padding-top: 20px;
 }
 
@@ -177,6 +185,11 @@ hr{
 .btn-default{
     border: 1px;
     border-color: black;
+}
+
+.btn-warning, .btn-outline-secondary{
+    width: 10em;
+    margin-right: 1em;
 }
 
 .information{
@@ -243,10 +256,6 @@ hr{
     transform: scale(1);
 }
 
-.container{
-    padding-left: 50px;
-}
-
 @media only screen and (max-width: 970px) {
 
     .step-numbers{
@@ -257,12 +266,23 @@ hr{
     }
     .container{
         padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .explanation{
+        padding-left: initial;
     }
 }
 
 @media only screen and (max-width: 576px) {
     .border{
         margin-top: 0px;
+        margin-bottom: 0px;
     }
 }
+
+@media (min-width: 1200px) {
+    .container {
+      width: 970px !important;
+     }
+  }
 
