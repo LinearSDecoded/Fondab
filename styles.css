@@ -1,0 +1,267 @@
+.openSans {
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -30px;
+}
+
+.input-container {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.container{
+    padding-left: 50px !important;
+}
+
+.steps, .customer-type, .registration, .become-customer{
+    font-weight: lighter;
+}
+
+.become-customer{
+    margin-bottom: 20px;
+}
+
+.steps, .explanation{
+    margin-top: 20px;
+}
+
+
+.link{
+    font-weight: 600;
+}
+
+.land-dropdown{
+    padding-left: 0px !important;
+    padding-right: 20px !important;
+}
+
+.icon {
+    padding: 4px;
+    min-width: 25px;
+    text-align: center;
+    border-radius: 0px;
+}
+.input-field {
+    padding: 0px;
+    outline: none;
+}
+
+.checkbox-container{
+    display: block;
+    position: relative;
+}
+
+.checkbox-container input{
+    visibility: hidden;
+}
+
+.checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.checkmark:hover {
+    background-color: #ccc;
+}
+  
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-text{
+    display: block;
+}
+
+.form{
+    margin-right: -200px !important;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 6px;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.customer-type{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.input-group-prepend{
+    height: 50%;
+}
+
+.country{
+    margin-right: 15px !important;
+}
+
+.lightgrey{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px 20px 10px 20px;
+    background-color: #FBFBF9;
+}
+
+.arbetsuppgifter{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.radiobutton-group{
+    background-color: #E7F3FF;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.step-numbers {
+    height: 25px;
+    width: 25px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 1px;
+    display: flex;
+    position: absolute;
+    margin-left: -63px !important;
+    margin-right: 100px;
+    padding-left: 7px;
+    background-color: white;
+    color: #eee;
+  }
+
+.number{
+    color: black;
+}
+
+div{
+    overflow-x: hidden;
+}
+
+.border{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+hr{
+    background-color: orange;
+   margin: 2000px -2000px;
+}
+
+.btn-default{
+    border: 1px;
+    border-color: black;
+}
+
+.information{
+    font-size: small;
+}
+
+.faded-text{
+    opacity: 0.5;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: orange;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.container{
+    padding-left: 50px;
+}
+
+@media only screen and (max-width: 970px) {
+
+    .step-numbers{
+        visibility: hidden;
+    }
+    .checkbox-text{
+        padding-left: 20px;
+    }
+    .container{
+        padding-left: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .border{
+        margin-top: 0px;
+    }
+}
+

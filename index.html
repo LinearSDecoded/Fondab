@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+<body>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <div class="container border">
+    <div class="row top-row">
+      <div class="col-md-4 order-md-1 mb-4" >
+        <h1 class="become-customer">Bli kund</h1>
+        <h6 class="registration">Kostnadsfri registrering</h6>
+      </div>
+      <div class="col-md-8 order-md-2">
+        <p class="text explanation">Nedan uppgifter behöver vi för att kunna
+          registrera dig som kund. Vi tar endast in de 
+          personuppgifter som är nödvändiga för att kunna upprätta
+          en kundrelation med dig.
+        </p>
+      </div>
+    </div>
+    <hr class="col-xs-12">
+<form action="#">
+  <h5 class="customer-type">Ange kundtyp</h5>
+      <div class="col-md-12">
+        <div class="row radiobutton-group">
+          <div class="custom-control custom-radio">
+          <input type="radio" name="radio-group" id="private-customer">
+          <label for="private-customer">Privatperson</label>
+          <input type="radio" name="radio-group" id="organisation">
+          <label for="organisation">Företag eller organisation</label>
+        </div>
+      </div>
+        </div>
+        <div class="lightgrey arbetsuppgifter">
+          <span>Dina adressuppgifter hämtas från SPAR (Statens personadressregister). 
+            Om du är förälder och ska registrera ett barn under 16 år, <a href="#"> <span class="link"> klicka här</span></a>.</span>
+        </div>
+        <span class="step-numbers"><span class="number">1</span></span>
+        <h5 class="steps">Fyll i dina personuppgifter</h5>
+        <div class="lightgrey">
+          <div class="row input-container">
+            <div class="col-md-6 mb-3">
+            <label for="firstName">Förnamn</label>
+            <div class="input-container">
+              <span class="input-group-prepend">
+                <div class="input-group-text bg-transparent rounded-0">
+                <i class='icon far fa-user'></i>
+                </div>
+              </span>
+              <input type="text" class="form-control input-field rounded-0" id="firstName"
+              placeholder="Förnamn" value required>
+             </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName">Efternamn</label>
+              <div class="input-container">
+                <span class="input-group-prepend">
+                  <div class="input-group-text bg-transparent rounded-0">
+                  <i class='icon far fa-user'></i>
+                  </div>
+                </span>
+              <input type="text" class="form-control input-field rounded-0" id="lastName"
+              placeholder="Efternamn" value required>
+              </div>
+          </div>
+          <div class="w-100"></div>
+            <div class="col-md-6 mb-3">
+              <label for="personNummer">Personnummer (Användarnamn)</label>
+              <div class="input-container">
+                <span class="input-group-prepend">
+                  <div class="input-group-text bg-transparent rounded-0">
+                  <i class='icon far fa-user'></i>
+                  </div>
+                </span>
+              <input type="text" class="form-control input-field rounded-0"
+              placeholder="Personnummer: (ååååmmddxxxx)" value required>
+              </div>
+            </div>
+            </div>
+        </div>
+        <span class="step-numbers"><span class="number">2</span></span>
+          <h5 class="steps">Ange hemvist</h5>
+          <div class="lightgrey">
+            <div class="row countries">
+              <div class="col-md-6 mb-3 land-dropdown">
+                <label for="land">Land</label>
+                <div class="input-container">
+                  <span class="input-group-prepend">
+                    <div class="input-group-text bg-transparent rounded-0">
+                      <i class='icon fas fa-map-marker-alt'></i>
+                    </div>
+                  </span>
+                  <select class="form-control input-field rounded-0 country"
+                  placeholder value required>
+                    <option value="Sweden">Sverige</option>
+                    <option value="Denmark">Danmark</option>
+                    <option value="Finland">Finland</option>
+                    <option value="Norway">Norge</option>
+                    <option>etc etc</option>
+                  </select>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3 land-dropdown">
+                  <label for="land">Skattepliktig hemvinst</label>
+                  <div class="input-container">
+                    <span class="input-group-prepend">
+                      <div class="input-group-text bg-transparent rounded-0">
+                      <i class='icon fas fa-map-marker-alt'></i>
+                      </div>
+                    </span>
+                    <select class="form-control input-field rounded-0 country"
+                    placeholder value required>
+                      <option value="Sweden">Sverige</option>
+                      <option value="Denmark">Danmark</option>
+                      <option value="Finland">Finland</option>
+                      <option value="Norway">Norge</option>
+                      <option>etc etc</option>
+                    </select>
+                    </div>
+                    <span class="information">
+                      <a href="#" class="link">
+                        <i class='fas fa-info-circle'></i> Hur byter jag skattepliktig hemvinst?
+                    </a> 
+                  </span>
+                  </div>
+            </div>
+        </div>
+        <span class="step-numbers"><span class="number">3</span></span>
+        <h5 class="steps">Ange e-postadress och telefonnummer</h5>
+        <div class="lightgrey">
+          <div class="row input-container ">
+            <div class="col-md-6 mb-3">
+            <label for="email">E-postadress</label>
+            <div class="input-container">
+              <span class="input-group-prepend">
+                <div class="input-group-text bg-transparent rounded-0">
+                  <i class="icon far fa-envelope-open"></i>
+                </div>
+              </span>
+              <input type="text" class="form-control input-field rounded-0" id="email"
+              placeholder="E-postadress" value required>
+             </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="email">Upprepa e-postadressen</label>
+              <div class="input-container">
+                <span class="input-group-prepend">
+                  <div class="input-group-text bg-transparent rounded-0">
+                    <i class="icon far fa-envelope-open"></i>
+                  </div>
+                </span>
+              <input type="text" class="form-control input-field rounded-0" id="email"
+              placeholder="E-postadress" value required>
+              </div>
+            </div>
+          <div class="w-100"></div>
+            <div class="col-md-6 mb-3">
+              <label for="phone">Telefonnummer</label>
+              <div class="input-container">
+                <span class="input-group-prepend">
+                  <div class="input-group-text bg-transparent rounded-0">
+                    <i class="icon fas fa-phone-alt"></i>
+                  </div>
+                </span>
+              <input type="text" class="form-control input-field rounded-0" id="phone"
+              placeholder="Telefonnummer" value required>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="step-numbers"><span class="number">4</span></span>
+        <h5 class="steps">Övriga uppgifter</h5>
+          <div class="lightgrey">
+            <div class="row input-container">
+              <div class="col-md-6 mb-3">
+                <label for="how">Hur hittade du oss?</label>
+                <select id="how-dropdown" class="form-control input-field rounded-0"
+                placeholder value required>
+                <option value="choose">Välj...</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="nigelFrank">Nigel Frank</option>
+                <option value="etc">etc etc</option>
+              </select>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="campaign-code">Eventuell kampanjkod</label>
+              <div class="input-container">
+              <input type="text" class="form-control input-field rounded-0" id="campaign-code"
+              placeholder="Kampanjkod" value required>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-md-12 mb-3">
+            <label class="container checkbox-container"><span class="checkbox-text">Jag har läst och godkänner <a href="#"><span class="link">Allmänna vilkor</span></a> och <a href="#"><span class="link">Information om behandling av personuppgifter</span></span></a>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <label class="container checkbox-container"><span class="checkbox-text">Jag vill ta del av nyhetsbrev, kampanjer och personliga erbjudanden. Jag godkänner i och med det att Fondab använder <br>
+              mina personuppgifter som underlag för marknads- och kundanalyser. <br>
+              <span class="faded-text">Jag är medveten att mina personuppgifter kan komma att lämnas till Fondabs samarbetspartners.</span> </span>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-md-12 mb-3">
+          <button type="button" class="btn btn-warning rounded-0">Fortsätt</button>
+          <button type="button" class="btn btn-outline-secondary rounded-0">Avbryt</button>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div> 
+  </form>
+  </div>
+</body>
+</html>
